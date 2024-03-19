@@ -14,6 +14,8 @@ int main(void)
 {
 	PRINTF( "I2C output is available on D18/SDA and D19/SCL.\r\n" );
 	PRINTF( "Pull-up resisters are required to connect I2C target(s)\r\n" );
+	PRINTF( "\r\n" );
+	PRINTF( "This code intended to communicate temp-sensor which has target address = 0x4C (0x98)\r\n" );
 
 	constexpr uint8_t	address		= 0x4C;
 	uint8_t				w_data[]	= { 0 };
