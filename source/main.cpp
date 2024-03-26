@@ -22,7 +22,7 @@ int main(void)
 
 	while ( true )
 	{
-		i2c.write( address, w_data, sizeof( w_data ), NO_STOP );
+		i2c.write( address, w_data, sizeof( w_data ), I2C::NO_STOP );
 		i2c.read(  address, r_data, sizeof( r_data ) );
 
 		PRINTF( "0x %02X %02X\r\n", r_data[ 0 ], r_data[ 1 ] );
